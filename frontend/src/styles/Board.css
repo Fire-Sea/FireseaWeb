@@ -1,0 +1,155 @@
+/* 게시판 wrapper */
+.board-container{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.board-box{
+  border: 3px solid lightcoral;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  min-height: 500px;
+}
+/* 게시판 스타일 */
+.board-category{
+  width: 100%;
+  margin-top: 0;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  background-color: rgb(228, 76, 76);
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+  color: white;
+  padding-left: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+th{
+  padding-bottom: 10px;
+}
+.board-tr td{
+  border-top: solid 1px rgb(223, 162, 162);
+  border-bottom: solid 1px rgb(223, 162, 162);
+}
+.board-tr:hover {
+  background-color: rgba(85, 85, 85, 0.5);
+}
+
+/* PC버전 게시판 스타일 */
+.board-pc{
+  width: 100%;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0px;
+  margin-top: -10px;
+}
+.board-id{
+  width: 5%;
+  font-size: 12px;
+}
+.board-title{
+  width: 45%;
+  text-align: left;
+  overflow: hidden;
+  cursor: pointer;
+  padding-left: 10px;
+  font-size: 14px;
+}
+.board-nickname, .board-date{
+  width: 15%;
+  font-size: 12px;
+}
+.board-views, .board-likes{
+  width: 10%;
+  font-size: 12px;
+}
+
+/* 모바일버전 게시판 스타일 */
+.board-m{
+  width: 100%;
+  border-spacing: 0px;
+  display: none;
+}
+.board-title-m{
+  text-align: left;
+  width: 100vw;
+  cursor: pointer;
+  font-size: 12px;
+  border-top: 1px solid lightcoral;
+  border-bottom: solid 1px lightcoral;
+  padding: 5px;
+}
+.board-title-m p{
+  margin: 0;
+}
+.p-title{
+  font-size: 13px;
+}
+.p-nickname{
+  font-size: 11px;
+  float: left;
+}
+.p-date, .p-views{
+  float: right;
+  font-size: 11px;
+  border-right: 1px solid lightgray;
+  padding: 0 5px;
+}
+.p-likes{
+  float: right;
+  font-size: 11px;
+  padding: 0 5px;
+}
+.board-tr-m:hover {
+  background-color: rgba(85, 85, 85, 0.5);
+}
+
+/* 홈, 글쓰기, 페이지 버튼 */
+.board-home{
+  width: 100px;
+  height: 30px;
+  float: left;
+}
+.board-new{
+  width: 100px;
+  height: 30px;
+  float: right;
+}
+.board-pages{
+  text-align: center;
+}
+.board-pages button{
+  margin: 2px;
+}
+.board-pages button:hover{
+  color: lightgray;
+  background-color: rgb(167, 56, 56);
+}
+.board-clicked{
+  color: lightgray;
+  background-color: rgb(167, 56, 56);
+}
+
+@media screen and (max-width: 1199px) {
+  .board-container{
+    width: 90%;
+  }
+  .board-pc{
+    display: none;
+  }
+  .board-m{
+    display: block;
+  }
+  .board-category{
+    margin-bottom: 0;
+  }
+  .board-home{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .board-new{
+    width: 100%;
+    margin-top: 5px;
+  }
+}

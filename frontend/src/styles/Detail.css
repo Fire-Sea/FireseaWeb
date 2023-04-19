@@ -1,0 +1,174 @@
+.detail-container{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* 상세글 스타일 */
+.detail-category{
+  background-color: rgb(228, 76, 76);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-left: 10px;
+  margin: 0px;
+}
+
+/* 상세글 정보 스타일 */
+.detail-title{
+  width: 100%;
+  padding: 10px 5px 5px 5px;
+  overflow: hidden;
+  border-top: 1px solid lightcoral;
+}
+.detail-title h3{
+  margin: 0px;
+  font-size: 16px;
+}
+.detail-info{
+  border-bottom: 1px solid lightcoral;
+  margin-top: -7px;
+  float: left;
+  width: 100%;
+  padding: 0 0 10px 6px;
+}
+.detail-info p{
+  margin: 0px;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline;
+  margin-right: 10px;
+}
+.detail-nickname{
+  border-right: 1px solid lightgray;
+  padding-right: 10px;
+}
+.detail-cnt{
+  float: right;
+  padding-top: 2px;
+}
+
+/* 상세글 내용 스타일 */
+.detail-body{
+  width: 100%;
+  height: 400px;
+  margin: 0px;
+  padding: 30px 10px;
+  font-size: 15px;
+}
+.detail-body p{
+  margin: 0px;
+}
+
+/* 좋아요, 싫어요 버튼 스타일 */
+.detail-btns{
+  text-align: center;
+}
+.detail-btns h3, .detail-btns p{
+  margin: 0px;
+}
+.detail-like, .detail-dislike{
+  width: 80px;
+  height: 50px;
+  margin: 5px 10px;
+}
+.detail-dislike{
+  background-color: white;
+  border: 3px solid rgb(228, 76, 76);
+  color: black;
+}
+
+/* 뒤로가기, 삭제하기, 수정하기 버튼 스타일 */
+.detail-backBtn{
+  float: left;
+  width: 100px;
+  height: 35px;
+  margin-top: 10px;
+}
+.detail-removeBtn{
+  float: right;
+  width: 100px;
+  height: 35px;
+  background-color: white;
+  border: 3px solid rgb(228, 76, 76);
+  color: rgb(228, 76, 76);
+  margin: 10px 0 0 5px;
+}
+.detail-modifyBtn{
+  float: right;
+  width: 100px;
+  height: 35px;
+  margin: 10px 0 0 5px;
+}
+
+/* 댓글 스타일 */
+.comment-container{
+  border-radius: 20px;
+}
+.comment-container li{
+  list-style: none;
+  border: 1px solid red;
+  border-radius: 20px;
+  padding-left: 10px;
+  margin-bottom: 1px;
+  display: flex;
+}
+.comment-l{
+  width: 89%;
+}
+.comment-l input{
+  width: 89%;
+  display: none;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+.comment-r{
+  display: flex;
+  position: relative;
+  margin-top: 70px;
+  height: fit-content;
+}
+.comment-r p{
+  position: absolute;
+  top: -80px;
+  right: 0;
+  cursor: pointer;
+}
+.comment-r button{
+  margin-right: 2px;
+}
+.detail-input{
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  resize: none;
+}
+.detail-savecomment{
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  top: 70px;
+  right: 20px;
+}
+.detail-comment{
+  width: 100%;
+  height: 120px;
+  border: 1px solid red;
+  position: relative;
+  margin-bottom: 10px;
+}
+.detail-light{
+  color: white;
+  background-color: rgb(39, 39, 39);
+}
+
+
+.show{
+  display: block;
+}

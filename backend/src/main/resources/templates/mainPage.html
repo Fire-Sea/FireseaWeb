@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>메인페이지 입니다.</h1>
+<a href="/backend">backend</a>
+<a href="/front">front</a>
+<br>
+<br>
+<br>
+<br>
+
+<table>
+    <tr>
+        <th>제목</th>
+        <th>내용</th>
+        <th>수정일</th>
+    </tr>
+</table>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<input id="title" placeholder="제목"/><br>
+<textarea id="body" placeholder="내용"></textarea>
+<button id="send">작성하기</button>
+</body>
+
+<script>
+    (function(){
+
+
+
+
+        //작성하기
+        var httpRequest;
+        document.getElementById("send").addEventListener("click", sendTextMessage);
+        function sendTextMessage(){
+            httpRequest = new XMLHttpRequest();
+
+            var title = document.getElementById("title").value;
+            var body = document.getElementById("body").value;
+
+            if(!httpRequest){
+                alert("XMLHTTP 인스턴스를 만들 수가 없습니다.");
+                return false;
+            }
+            httpRequest.onreadystatechange = alertContents;
+            httpRequest.open("POST", "/api/send", true);
+            httpRequest.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            httpRequest.send(JSON.stringify({"textTitle":title, "textBody":body }));
+        }
+
+        function alertContents() {
+            if(httpRequest.readyState === XMLHttpRequest.DONE){
+                if (httpRequest.status === 200) {
+                    alert(httpRequest.responseText);
+                }else{
+                    alert("request에 뭔가 문제가 있어요.");
+                }
+            }
+        }
+    })();
+</script>
+
+<!--script src="https://code.jquery.com/jquery-1.12.4.min.js">
+
+    $(document).ready(function (){
+        console.log("why?");
+        console.log("why?"); console.log("why?");
+        $("#send").click(function(){
+            console.log("ghighig");
+
+            var params = {
+                textTitle : $("#title").val(),
+                textBody: $("#body").val()
+            }
+
+            $.ajax({
+                type:"POST",
+                url:"/api/send",
+                data: params,
+                success: function(res){
+                    alert(res.data)
+                },
+                error:function(XMLHttpRequest,textStatus, errorThrown){
+                    alert("연결할 수 없습니다.");
+                }
+            });
+        });
+    });
+
+</script-->
+</html>

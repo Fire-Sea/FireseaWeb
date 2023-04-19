@@ -1,0 +1,206 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+ font-family: 'Nanum Gothic', sans-serif;
+}
+div{
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+}
+.App{
+  height: 100vh;
+  transition: 0.5s all;
+}
+button{
+  cursor: pointer;
+  background-color: rgb(228, 76, 76);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.5s all;
+}
+button:hover{
+  background-color: rgb(167, 56, 56);;
+}
+
+#wrapper{
+  min-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+
+.search{
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+.start{
+  opacity: 0;
+}
+.end{
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.toggle-switch {
+  width: 80px;
+  left: 300px;
+  top: 18px;
+  height: 25px;
+  display: block;
+  position: fixed;
+  border-radius: 30px;
+  background-color: black;
+  z-index: 6;
+  box-shadow: 0 0 16px 3px rgba(0 0 0 / 15%);
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.toggle-switch .toggle-btn {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #f03d3d;
+  left: calc(100% - 25px);
+}
+
+.toggle-switch.dark {
+  background-color: white;
+}
+
+.toggle-switch.dark .toggle-btn {
+  left: 5px;
+}
+
+.toggle-switch, .toggle-btn {
+  transition: all 0.2s ease-in;
+}
+
+.toggle-switch h4{
+  margin-top: 2px;
+  transform: translateX(-12px);
+  color: white;
+}
+
+.toggle-switch.dark h4{
+  transform: translateX(12px);
+  color: black;
+}
+
+.top-btn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  right: 50px;
+  bottom: 50px;
+  border-radius: 50px;
+  background-color: rgb(167, 56, 56);
+  text-decoration: none;
+  z-index: 5;
+}
+.top-btn:link, .top-btn:visited{
+  color: white;
+}
+.top-btn p{
+  margin: 15px 12px 12px 12px;
+}
+.top-btn:hover{
+  animation: topBtn 1 0.5s;
+}
+@keyframes topBtn{
+  25%{
+    transform: translateY(10px);
+  }
+  75%{
+    transform: translateY(-10px);
+  }
+}
+@media screen and (max-width: 1199px) {
+  .banner-l{
+    display: none;
+  }
+  .banner-r{
+    display: none;
+  }
+  .detail-container{
+    width: 95%;
+  }
+  .login-bg{
+    width: 80%;
+    left: 10%;
+    right: 10%;
+  }
+  .edit-type{
+    width: 90%;
+  }
+  .edit-container{
+    width: 90%;
+    margin-top: 10%;
+  }
+  .edit-btn button{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .edit-btn{
+    width: 100%;
+  }
+  .detail-backBtn{
+    width: 100%;
+  }
+  .detail-modifyBtn{
+    width: 100%;
+  }
+  .detail-removeBtn{
+    width: 100%;
+  }
+  .gacha-container{
+    width: 75%;
+    height: 500px;
+  }
+  .gacha-btns{
+    flex-direction: column;
+    margin: 10px 12.5% 0px 12.5%;
+  }
+  .gacha-result p{
+    font-size: 20px;
+  }
+  
+  .toggle-switch{
+    left: 75%;
+    top: 70px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .gacha-container{
+    width: 80%;
+    height: 250px;
+  }
+  .gacha-btns{
+    flex-direction: column;
+    margin: 10px 10% 0px 10%;
+  }
+  .gacha-result p{
+    font-size: 12px;
+  }
+  .top-btn{
+    right: 10px;
+    bottom: 10px;
+  }
+}

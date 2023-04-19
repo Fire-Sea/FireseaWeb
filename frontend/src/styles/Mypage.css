@@ -1,0 +1,90 @@
+.mypage-bg{
+  width: 60%;
+  margin: 100px auto;
+  padding: 50px;
+}
+.mypage-bg h1{
+  text-align: center;
+  margin-top: -10px;
+}
+.mypage-bg h4{
+  margin: 0px;
+}
+.mypage-bg input{
+  width: 200px;
+  height: 30px;
+}
+.mypage-bg .mypage-change{
+  width: 100px;
+  height: 38px;
+}
+.mypage-board{
+  margin-top: 50px;
+}
+.mypage-textCnt{
+  margin-bottom: 50px;
+}
+.mypage-btns{
+  text-align: center;
+}
+.mypage-pageNum{
+  width: 20px;
+  height: 20px;
+}
+.mypage-clicked{
+  width: 20px;
+  height: 20px;
+  background-color: rgb(165, 55, 55)
+}
+table{
+  width: 100%;
+  border-spacing: 0;
+}
+.mypage-tr{
+  cursor: pointer;
+}
+.mypage-tr:hover{
+  background-color: rgba(0,0,0,0.5);
+}
+.mypage-board td{
+  border-bottom: 1px solid lightgray;
+}
+.mypage-id{
+  width: 10%;
+}
+.mypage-title{
+  width: 45%;
+  text-align: left;
+}
+.mypage-category{
+  width: 15%;
+}
+.mypage-date{
+  width: 15%;
+}
+.mypage-views{
+  width: 15%;
+}
+
+.mypage-id-m{
+  width: 20%;
+}
+@media screen and (max-width: 1199px) {
+  .mypage-bg{
+    width: 100%;
+    padding: 5%;
+  }
+  .mypage-board{
+    width: 100%;
+  }
+  .mypage-date{
+    font-size: 12px;
+  }
+  .board-pc{
+    display: none;
+  }
+  .board-m{
+    display: block;
+    border: 1px solid white;
+  }
+}

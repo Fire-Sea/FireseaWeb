@@ -1,0 +1,62 @@
+.gacha-container{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  overflow: hidden;
+  width: 45%;
+  height: 500px;
+}
+.gacha-video{
+  display: none;
+  height: 100%;
+  position: absolute;
+}
+.gacha-result{
+  background-color: gray;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.rank5{
+  border: 5px solid rgb(255, 187, 62);
+  width: 8%;
+  height: 90%;
+  background-color: azure;
+  margin: 1%;
+  text-align: center;
+  overflow: hidden;
+}
+.gacha-result p{
+  margin: 0px auto;
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  font-size: 30px;
+}
+.rank4{
+  border: 5px solid rgb(182, 90, 182);
+  width: 8%;
+  height: 90%;
+  background-color: azure;
+  margin: 1%;
+  font-size: 10px;
+  overflow: hidden;
+}
+.rank3{
+  width: 8%;
+  height: 90%;
+  background-color: azure;
+  margin: 1%;
+  border: 5px solid rgb(109, 195, 248);
+  font-size: 10px;
+  overflow: hidden;
+}
+.gacha-btns{
+  display: flex;
+  margin-top: 20px;
+  margin-left: 27.5%;
+}
+.gacha-10{
+  height: 30px;
+  margin-top: 5px;
+}

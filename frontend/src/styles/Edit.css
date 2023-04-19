@@ -1,0 +1,90 @@
+
+.edit-btn{
+  margin: 10px 0px 0px 0px;
+}
+
+.edit-btn button{
+  width: 100px;
+  height: 40px;
+  margin-right: 10px;
+}
+.btn-clicked{
+  background-color: rgb(167, 56, 56);
+}
+.edit-container{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.edit-title{
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  font-size: 15px;
+  border: 1px solid lightcoral;
+}
+.edit-menu{
+  width: 100%;
+  border-bottom: 0px;
+  padding-left: 5px;
+  margin: 0px;
+  text-align: left;
+  background-color: rgb(228, 76, 76);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 30px;
+}
+.edit-menu button{
+  height: 30px;
+}
+.edit-menu button:hover{
+  background-color: rgb(255, 83, 83);
+}
+.edit-body{
+  width: 100%;
+  padding: 20px;
+  min-height: 500px;
+  text-align: left;
+  font-size: 16px;
+  border: 1px solid lightcoral;
+}
+.edit-btn{
+  width: 60%;
+}
+.edit-body p{
+  margin: 0px;
+}
+.edit-btn button{
+  float: left;
+}
+.edit-btn button:hover{
+  color: lightgray;
+  background-color: rgb(167, 56, 56);
+}
+
+input:focus{
+  outline: none;
+}
+
+.edit-body:focus{
+  outline: none;
+}
+.edit-type{
+  margin: 50px auto 0 auto;
+  text-align: left;
+  width: 50%;
+  border-bottom: 2px solid lightcoral;
+}
+
+@media screen and (max-width: 1199px) {
+  .edit-type{
+    margin: 100px auto -40px auto;
+    text-align: left;
+    width: 50%;
+    border-bottom: 2px solid lightcoral;
+  }
+}

@@ -1,0 +1,1 @@
+GRANT ALL PRIVILEGES ON *.* to root@'%' identified by '1111';

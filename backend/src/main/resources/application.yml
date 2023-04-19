@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active:
+      - local
+    group:
+      local:
+        - db-local
+      prod:
+        - db-aws
+      docker-local:
+        - db-docker-local
+    include:
+      - db

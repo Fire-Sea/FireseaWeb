@@ -1,0 +1,45 @@
+services:
+  backend:
+    build: backend
+    restart: always
+    networks:
+      - react-spring
+      # - spring-mariadb
+    ports:
+      - 8080:8080
+
+  # db:
+  #   build: db
+  #   restart: always
+  #   volumes:
+  #     - db-data:/var/lib/mysql
+  #   networks:
+  #     - spring-mariadb
+  #   ports:
+  #     - 3307:3306
+
+  frontend:
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    ports:
+      - 80:3000
+    networks:
+      - react-spring
+    depends_on:
+      - backend
+  
+  # nginx:
+  #   restart: always
+  #   build:
+  #     context: ./nginx
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - 80:80
+     
+
+volumes:
+  db-data:
+networks:
+  react-spring:
+  # spring-mariadb:
